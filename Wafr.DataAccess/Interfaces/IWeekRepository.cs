@@ -4,14 +4,14 @@ namespace Wafr.DataAccess.Interfaces
 {
     public interface IWeekRepository
     {
-        clsWeek? GetOpenWeekByUserID(int UserID);
+        public clsWeek? GetOpenWeekByUserID(int UserID);
 
-        bool Create(clsWeek week);
+        public bool Create(clsWeek week);
 
-        bool UpdateCurrentBalance(int WeekID, decimal newBalamce);
+        public bool UpdateCurrentBalance(int WeekID, decimal newBalamce);
 
-        bool CloseWeek(int WeekID);
+        public bool CloseWeek(int WeekID);
 
-        clsWeek? GetByID(int WeekID);
+        public clsWeek? GetByID(int WeekID);
     }
 }
