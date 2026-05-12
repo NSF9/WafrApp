@@ -4,12 +4,12 @@ namespace Wafr.Business.Interfaces
 {
     public interface IWeeklyExpenseService
     {
-        WeeklyExpenseResponseDTO AddWeeklyExpesneRequest(int UserID, AddWeeklyExpenseRequestDTO AddWeeklyExpesneRequest);
+        public WeeklyExpenseResponseDTO AddWeeklyExpesneRequest(int UserID, AddWeeklyExpenseRequestDTO AddWeeklyExpesneRequest);
 
-        List<WeeklyExpenseResponseDTO> GetCurrentWeeklyExpenses(int UserID);
+        public List<WeeklyExpenseResponseDTO> GetCurrentWeeklyExpenses(int UserID);
 
-        bool UpdateExpense(int ExpenseID, UpdateExpenseRequestDTO UpdateExpenseRequest);
+        public bool UpdateExpense(int ExpenseID, UpdateExpenseRequestDTO UpdateExpenseRequest);
 
-        bool DeleteExpense(int ExpenseID);
+        public bool DeleteExpense(int ExpenseID);
     }
 }

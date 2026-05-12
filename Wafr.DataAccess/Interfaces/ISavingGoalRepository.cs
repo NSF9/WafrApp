@@ -5,18 +5,18 @@ namespace Wafr.DataAccess.Interfaces
 {
     public interface ISavingGoalRepository
     {
-        clsSavingGoal? GetByID(int savingGoalID);
+        public clsSavingGoal? GetByID(int savingGoalID);
 
-        List<clsSavingGoal> GetByUserID(int userID);
+        public List<clsSavingGoal> GetByUserID(int userID);
 
-        int Create(clsSavingGoal goal);
+        public int Create(clsSavingGoal goal);
 
-        bool Update(clsSavingGoal goal);
+        public bool Update(clsSavingGoal goal);
 
-        bool UpdateCurrentAmount(int savingGoalID, decimal newAmount);
+        public bool UpdateCurrentAmount(int savingGoalID, decimal newAmount);
 
-        bool UpdateStatus(int savingGoalID, enSavingGoalStatus status);
+        public bool UpdateStatus(int savingGoalID, enSavingGoalStatus status);
 
-        bool Delete(int savingGoalID);
+        public bool Delete(int savingGoalID);
     }
 }

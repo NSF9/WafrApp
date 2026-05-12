@@ -4,14 +4,11 @@ namespace Wafr.DataAccess.Interfaces
 {
     public interface IUserRepository
     {
-        clsUser? GetByID(int userID);
+        public clsUser? GetByID(int userID);
+        public clsUser? GetByEmail(string email);
+        public bool EmailExists(string email);
+        public int Create(clsUser user);
 
-        clsUser? GetByEmail(string email);
-
-        bool EmailExists(string email);
-
-        int Create(clsUser user);
-
-        bool Update(clsUser user);
+        public bool Update(clsUser user);
     }
 }

@@ -1,12 +1,30 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Wafr.DataAccess.Interfaces;
+using Wafr.Models.Entities;
 
 namespace Wafr.DataAccess.Repositories
 {
-    internal class clsUserRepository
+    public class clsUserRepository : IUserRepository
     {
+        public clsUser? GetByID(int userID)
+        {
+            throw new NotImplementedException();
+        }
+        public clsUser? GetByEmail(string email)
+        {
+            throw new NotImplementedException();
+        }
+        public bool EmailExists(string email)
+        {
+            throw new NotImplementedException();
+        }
+        public int Create(clsUser user)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool Update(clsUser user)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

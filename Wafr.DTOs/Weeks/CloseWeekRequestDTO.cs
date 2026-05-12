@@ -4,5 +4,5 @@ namespace Wafr.DTOs.Weeks;
 
 public class CloseWeekRequestDTO
 {
-    public List<TransferItemDTO> TransferItems { get; set; } = [];
+    public List<TransferItemRequestDTO> TransferItems { get; set; } = [];
 }

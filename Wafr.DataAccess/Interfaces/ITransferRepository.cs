@@ -4,24 +4,24 @@ namespace Wafr.DataAccess.Interfaces
 {
     public interface ITransferGroupRepository
     {
-        clsTransferGroup? GetByWeekID(int weekID);
+        public clsTransferGroup? GetByWeekID(int weekID);
 
-        int Create(clsTransferGroup transferGroup);
+        public int Create(clsTransferGroup transferGroup);
     }
     public interface ITransferItemRepository
     {
-        bool Create(clsTransferItem transferItem);
+        public bool Create(clsTransferItem transferItem);
 
-        bool CreateMany(List<clsTransferItem> transferItems);
+        public bool CreateMany(List<clsTransferItem> transferItems);
 
-        List<clsTransferItem> GetByTransferGroupID(int transferGroupID);
+        public List<clsTransferItem> GetByTransferGroupID(int transferGroupID);
 
-        List<clsTransferItem> GetBySavingGoalID(int savingGoalID);
+        public List<clsTransferItem> GetBySavingGoalID(int savingGoalID);
     }
 
     public interface ITransferRepository : ITransferGroupRepository, ITransferItemRepository
     {
-       
+
     }
 
 }
